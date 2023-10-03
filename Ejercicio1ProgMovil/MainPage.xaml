@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1ProgMovil.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+            <Label Text="Calculadora Basica" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="Ingrese Un Numero para la Operacion:" x:Name="num1" Keyboard="Numeric" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Entry Placeholder="Ingrese Un segundo número para la Operacion:" x:Name="num2" Keyboard="Numeric" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Label Text="Elija una de las Operaciones" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Padding="20"/>
+        <Button x:Name="suma" Text="Suma" Clicked="suma_Clicked" BackgroundColor="Aqua" CornerRadius="50" FontAttributes="Bold" FontSize="Large"/>
+        <Button Text="Resta"  x:Name="resta" Clicked="resta_Clicked" BackgroundColor="Aqua" CornerRadius="50" FontAttributes="Bold" FontSize="Large"/>
+        <Button Text="Multiplicación"  x:Name="producto" Clicked="producto_Clicked" BackgroundColor="Aqua" CornerRadius="50" FontAttributes="Bold" FontSize="Large"/>
+        <Button Text="División" x:Name="division" Clicked="division_Clicked" BackgroundColor="Aqua" CornerRadius="50" FontAttributes="Bold" FontSize="Large"/>
+        
+    </StackLayout>
+
+</ContentPage>
